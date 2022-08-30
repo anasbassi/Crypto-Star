@@ -16,15 +16,19 @@ export const fetchCrypto = (crypto) => ({
   crypto,
 });
 
-export const fetchCryptoApi = () => async (dispatch) => {
-  const result = await fetch('https://api.coincap.io/v2/assets#');
-  const json = await result.json();
-  const crypto = json.map((coins) => ({
-    id: coins.id,
-    name: coins.name,
-    price: coins.price,
-  }));
-  dispatch(fetchCrypto(crypto));
-};
+// export const fetchCryptoApi = () => async (dispatch) => {
+//   const result = await fetch('https://api.coincap.io/v2/assets#');
+//   const json = await result.json();
+//   const crypto = json.map((coins) => ({
+//     id: coins.data.id,
+//     name: coins.data.name,
+//     price: coins.data.price,
+//   }));
+//   dispatch(fetchCrypto(crypto));
+// };
+
+export const fetchCryptoApi = () => (dispatch) => fetch('https://api.coincap.io/v2/assets#')
+  .then((res) => res.json())
+  .then((data) => dispatch(fetchCrypto(data.data)));
 
 export default cryptoReducer;

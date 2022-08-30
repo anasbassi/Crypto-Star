@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { NavLink } from 'react-router-dom';
 import { fetchCryptoApi } from '../redux/crypto/crypto';
-import Coin from './Coin';
 
 const HomePage = () => {
   const crypto = useSelector((state) => state.crypto);
@@ -16,12 +16,19 @@ const HomePage = () => {
   return (
     <section className="my-container">
       {crypto.map((coin) => (
-        <Coin
-          key={coin.id}
-          id={coin.id}
-          name={coin.name}
-          price={coin.price}
-        />
+        <div key={coin.rank}>
+          <NavLink
+            to="/details"
+            id={coin.id}
+            state={coin}
+          >
+            <h2>{coin.name}</h2>
+            <p>
+              $
+              {Number(coin.priceUsd).toFixed(3)}
+            </p>
+          </NavLink>
+        </div>
       ))}
     </section>
   );

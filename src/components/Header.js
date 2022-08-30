@@ -8,9 +8,9 @@ const Header = () => (
       <IoIosArrowBack />
     </NavLink> */}
 
-    <div>
+    <h1>
       CryptoStat
-    </div>
+    </h1>
 
     <p />
   </header>

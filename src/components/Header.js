@@ -1,15 +1,15 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
-import { IoIosArrowBack } from 'react-icons/io';
+// import { NavLink } from 'react-router-dom';
+// import { IoIosArrowBack } from 'react-icons/io';
 
 const Header = () => (
   <header>
-    <NavLink to="/">
+    {/* <NavLink to="/">
       <IoIosArrowBack />
-    </NavLink>
+    </NavLink> */}
 
     <div>
-      CryptoToday
+      CryptoStat
     </div>
 
     <p />

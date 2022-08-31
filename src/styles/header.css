@@ -4,6 +4,7 @@ header {
   justify-content: space-around;
   align-items: center;
   background-color: #eb4b89;
+  padding: 20px;
 }
 
 header h1 {

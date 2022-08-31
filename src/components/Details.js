@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
+import '../styles/details.css';
 
 const Details = () => {
   const location = useLocation();
@@ -8,9 +9,8 @@ const Details = () => {
     <section className="my-container">
       <h1 className="title">
         {state.name}
-        <span>
-          {state.symbol}
-        </span>
+        ,
+        {state.symbol}
       </h1>
       <p>
         Current price: $
@@ -34,7 +34,7 @@ const Details = () => {
       </p>
       <p>
         Maximum Supply:
-        {Number(state.maxSuppply).toFixed(3)}
+        {Number(state.maxSupply).toFixed(3)}
       </p>
     </section>
   );

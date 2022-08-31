@@ -1,0 +1,27 @@
+.my-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 3px;
+  row-gap: 3px;
+}
+
+.my-container * {
+  background-color: #dc4680;
+  padding: 30px;
+}
+
+.my-container *:hover {
+  background-color: #cf4177;
+}
+
+.my-container h1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: end;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.my-container p {
+  font-size: 20px;
+}

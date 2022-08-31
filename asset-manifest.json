@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Crypto-Stat/static/css/main.d2c246fc.css",
+    "main.js": "/Crypto-Stat/static/js/main.a6428d54.js",
+    "index.html": "/Crypto-Stat/index.html",
+    "main.d2c246fc.css.map": "/Crypto-Stat/static/css/main.d2c246fc.css.map",
+    "main.a6428d54.js.map": "/Crypto-Stat/static/js/main.a6428d54.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d2c246fc.css",
+    "static/js/main.a6428d54.js"
+  ]
+}

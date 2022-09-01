@@ -1,20 +1,27 @@
-const FETCH_CRYPTO = 'cryptoStat/crypto/FETCH_CRYPTO';
-const SEARCH_CRYPTO = 'cryptoStat/crypto/SEARCH_CRYPTO';
-const CLEAR_SEARCH = 'cryptoStat/crypto/CLEAR_SEARCH';
-const initialState = [];
+const LOAD_COINS = 'LOAD_COINS';
+const SEARCH = 'SEARCH_COIN';
+const CLEAR = 'CLEAR_SEARCH';
+const initial = {
+  crypto: [],
+  search: [],
+};
+const baseURL = 'https://api.coincap.io/v2/assets';
 
-const cryptoReducer = (state = initialState, action) => {
+const coinsReducer = (state = initial, action) => {
   switch (action.type) {
-    case FETCH_CRYPTO:
-      return action.crypto;
-    case SEARCH_CRYPTO:
+    case LOAD_COINS:
+      return {
+        ...state,
+        crypto: action.payload,
+      };
+    case SEARCH:
       return {
         ...state,
         search: state.crypto.filter((coin) => coin.id === action.payload
         || coin.symbol.toLowerCase() === action.payload
         || coin.name.toLowerCase() === action.payload),
       };
-    case CLEAR_SEARCH:
+    case CLEAR:
       return {
         ...state,
         search: [],
@@ -24,22 +31,22 @@ const cryptoReducer = (state = initialState, action) => {
   }
 };
 
-export const fetchCrypto = (crypto) => ({
-  type: FETCH_CRYPTO,
-  crypto,
+export const loadCoin = (arr) => ({
+  type: LOAD_COINS,
+  payload: arr,
 });
 
 export const searchCoin = (coin) => ({
-  type: SEARCH_CRYPTO,
+  type: SEARCH,
   payload: coin.toLowerCase(),
 });
 
 export const reset = () => ({
-  type: CLEAR_SEARCH,
+  type: CLEAR,
 });
 
-export const fetchCryptoApi = () => (dispatch) => fetch('https://api.coincap.io/v2/assets#')
+export const loadCoinThunk = () => (dispatch) => fetch(baseURL)
   .then((res) => res.json())
-  .then((data) => dispatch(fetchCrypto(data.data)));
+  .then((data) => dispatch(loadCoin(data.data)));
 
-export default cryptoReducer;
+export default coinsReducer;

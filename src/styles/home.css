@@ -1,3 +1,28 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-div {
+  padding: 0 0 20px;
+  width: fit-content;
+  margin: 10px auto;
+}
+
+.search-div > * {
+  height: 40px;
+  border: none;
+  padding: 0 10px;
+}
+
+.search-div button {
+  padding: 0 20px;
+  color: aliceblue;
+  background: #fc5293;
+  box-shadow: 2px 2px 2px #00000050;
+}
+
 .container {
   display: grid;
   grid-template-columns: auto auto;

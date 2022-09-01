@@ -2,7 +2,7 @@ import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import store from '../redux/configureStore';
+import store from '../redux/store';
 import SearchResult from '../components/SearchResult';
 
 test('Check if Searched results renders correctly', () => {

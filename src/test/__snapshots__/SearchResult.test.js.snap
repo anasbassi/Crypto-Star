@@ -1,65 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Check if Home page renders correctly 1`] = `
+exports[`Check if Searched results renders correctly 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <section
-        class="main-container"
-      >
-        <div
-          class="search-div"
-        >
-          <input
-            placeholder="Search coins"
-            type="text"
-            value=""
-          />
-          <button
-            type="button"
-          >
-            <a
-              class=""
-              href="/search"
-            >
-              Search
-            </a>
-          </button>
-        </div>
-        <div
-          class="container"
-        />
-      </section>
+      <p>
+        Coin not found
+      </p>
     </div>
   </body>,
   "container": <div>
-    <section
-      class="main-container"
-    >
-      <div
-        class="search-div"
-      >
-        <input
-          placeholder="Search coins"
-          type="text"
-          value=""
-        />
-        <button
-          type="button"
-        >
-          <a
-            class=""
-            href="/search"
-          >
-            Search
-          </a>
-        </button>
-      </div>
-      <div
-        class="container"
-      />
-    </section>
+    <p>
+      Coin not found
+    </p>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

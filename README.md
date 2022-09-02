@@ -19,7 +19,7 @@ This is a web app that displays current price of some common Crypto currencies. 
 
 ## Description video ✔️
 
-[Loom Video Link]()
+[Loom Video Link](https://www.loom.com/share/31f243b23459493d99d5859670d8e835)
 
 
 ## Getting Started 🙌

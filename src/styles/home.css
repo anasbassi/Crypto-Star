@@ -26,15 +26,14 @@
 .container {
   display: grid;
   grid-template-columns: auto auto;
-  column-gap: 3px;
-  row-gap: 3px;
-  width: 90%;
-  margin: 20px auto;
+  column-gap: 1px;
+  row-gap: 1px;
   text-align: end;
 }
 
 .grid-item {
-  padding: 20px;
+  max-width: 185px;
+  padding: 10px;
   background-color: #dc4680;
 }
 
@@ -43,14 +42,14 @@
 }
 
 .grid-item h2 {
-  font-size: 30px;
+  font-size: 18px;
 }
 
 .grid-item p {
-  font-size: 25px;
+  font-size: 16px;
 }
 
 .details {
-  font-size: 25px;
-  margin: 10px 10px 20px;
+  font-size: 18px;
+  margin: 8px 5px 18px;
 }

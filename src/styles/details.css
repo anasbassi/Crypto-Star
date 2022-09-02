@@ -7,7 +7,7 @@
 
 .my-container * {
   background-color: #dc4680;
-  padding: 30px;
+  padding: 15px;
 }
 
 .my-container *:hover {
@@ -19,9 +19,9 @@
   grid-column-end: 3;
   text-align: end;
   padding: 20px;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .my-container p {
-  font-size: 20px;
+  font-size: 13px;
 }

@@ -1,6 +1,6 @@
 .my-container {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto;
   column-gap: 3px;
   row-gap: 3px;
 }
@@ -15,8 +15,6 @@
 }
 
 .title {
-  grid-column-start: 1;
-  grid-column-end: 3;
   text-align: end;
   padding: 20px;
   font-size: 25px;

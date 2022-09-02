@@ -7,7 +7,7 @@
 .search-div {
   padding: 0 0 20px;
   width: fit-content;
-  margin: 10px auto;
+  margin: auto;
 }
 
 .search-div > * {
@@ -32,7 +32,7 @@
 }
 
 .grid-item {
-  max-width: 185px;
+  max-width: 195px;
   padding: 10px;
   background-color: #dc4680;
 }

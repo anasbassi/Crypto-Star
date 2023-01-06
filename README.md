@@ -15,7 +15,7 @@ This is a web app that displays current price of some common Crypto currencies. 
 
 ## Live Demo ✔️
 
-[Live Demo Link]( https://anasbassi.github.io/Crypto-Stat/)
+[Live Demo Link]( https://crypto-stat1.herokuapp.com/#/)
 
 ## Description video ✔️
 

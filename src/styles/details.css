@@ -1,0 +1,25 @@
+.my-container {
+  display: grid;
+  grid-template-columns: auto;
+  column-gap: 3px;
+  row-gap: 3px;
+}
+
+.my-container * {
+  background-color: #dc4680;
+  padding: 15px;
+}
+
+.my-container *:hover {
+  background-color: #cf4177;
+}
+
+.title {
+  text-align: end;
+  padding: 20px;
+  font-size: 25px;
+}
+
+.my-container p {
+  font-size: 13px;
+}

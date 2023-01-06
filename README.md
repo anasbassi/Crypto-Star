@@ -19,7 +19,7 @@ This is a web app that displays current price of some common Crypto currencies. 
 
 ## Description video ✔️
 
-[Loom Video Link](https://www.loom.com/share/31f243b23459493d99d5859670d8e835)
+[Loom Video Link](https://www.loom.com/share/f509abd6dc2743718c09c0b891fa14e8)
 
 
 ## Getting Started 🙌
@@ -81,7 +81,7 @@ Give a ⭐️ if you like this project!
 
 - Hat tip to anyone whose code was used
 - Microverse Community
-- [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) (For the App design)
+- [Nelson Sakwa](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)) (For the App design)
 
 ## 📝 License
 
